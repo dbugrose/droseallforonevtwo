@@ -1,0 +1,27 @@
+const UserInput = document.getElementById("userInput");
+const EnterBtn = document.getElementById("enterBtn");
+const AnswerParent = document.getElementById("answerParent");
+
+let data;
+
+async function fetchMC9() {
+    const response = await fetch(`https://allforone2526dor-fegsczb3g6hxf2dw.westus3-01.azurewebsites.net/api/mceight/RandomAnswer/${UserInput.value}%3F`)
+    data = await response.text();
+    console.log(data);
+}
+
+async function Answer() {
+        await fetchMC9();
+        AnswerParent.textContent = data;
+        UserInput.value = "";
+}
+
+EnterBtn.addEventListener("click", () => {
+    Answer();
+})
+
+UserInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        Answer();
+    }
+})
