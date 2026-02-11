@@ -5,22 +5,20 @@
   font-weight: 400;
   font-style: normal;
 }
-.typing-text {
-  display: inline-block;
-  font-family: monospace; 
+#typewriter-text {
+  border-right: .15em solid oklch(76.5% 0.177 163.223); 
   white-space: nowrap; 
-  position: relative;
+  overflow: hidden; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    blink-caret .75s step-end infinite;
 }
 
-.cursor::after {
-  content: "";
-  display: inline-block;
-  width: 3px; 
-  height: .7em; 
-  background-color: currentColor; 
-  margin-left: 5px;
-  vertical-align: middle;
-  animation: blink 1s step-end infinite;
+/* The blinking cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: oklch(76.5% 0.177 163.223); }
 }
 
 @keyframes blink {
@@ -30,26 +28,4 @@
   50% {
     opacity: 0;
   }
-}
-
-.typewriter h1 {
-  overflow: hidden; 
-  white-space: nowrap; 
-  margin: auto;
-  letter-spacing: .15em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: oklch(76.5% 0.177 163.223); }
 }
