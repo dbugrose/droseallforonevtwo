@@ -3,18 +3,6 @@ const EnterBtn = document.getElementById("enterBtn");
 const AnswerParent = document.getElementById("answerParent");
 
 let data;
-let i = 0;
-let txt = `Magic 8 Ball`;
-let speed = 100; 
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typewriter-text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
 window.addEventListener('load', function() {
     typeWriter();
 });

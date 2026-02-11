@@ -4,19 +4,6 @@ const MexicanBtn = document.getElementById("mexicanBtn");
 const RestaurantParent = document.getElementById("restaurantParent");
 
 let data;
-let category;
-let i = 0;
-let txt = `Restaurant Picker`;
-let speed = 100; 
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typewriter-text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
 window.addEventListener('load', function() {
     typeWriter();
 });
