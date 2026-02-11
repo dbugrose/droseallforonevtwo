@@ -171,6 +171,9 @@
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -189,11 +192,20 @@
   .inline {
     display: inline;
   }
+  .table {
+    display: table;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-flow-col {
     grid-auto-flow: column;
@@ -221,6 +233,10 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -253,6 +269,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -266,6 +285,13 @@
   }
   .text-emerald-400 {
     color: var(--color-emerald-400);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .sm\:grid-cols-1 {
     @media (width >= 40rem) {
@@ -318,6 +344,11 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -327,6 +358,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-outline-style: solid;
     }
   }
 }
