@@ -189,20 +189,11 @@
   .inline {
     display: inline;
   }
-  .table {
-    display: table;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-flow-col {
     grid-auto-flow: column;
@@ -231,10 +222,6 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -245,20 +232,17 @@
   .bg-\[\#000000aa\] {
     background-color: #000000aa;
   }
-  .bg-\[\#002260\] {
-    background-color: #002260;
-  }
   .bg-\[\#002260aa\] {
     background-color: #002260aa;
-  }
-  .bg-\[\#820456aa\] {
-    background-color: #820456aa;
   }
   .bg-\[url\(\/assets\/lorenzo-herrera-yP89apz2TAA-unsplash\.jpg\)\] {
     background-image: url(/assets/lorenzo-herrera-yP89apz2TAA-unsplash.jpg);
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -282,13 +266,6 @@
   }
   .text-emerald-400 {
     color: var(--color-emerald-400);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .sm\:grid-cols-1 {
     @media (width >= 40rem) {
@@ -341,11 +318,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -355,7 +327,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
     }
   }
 }
