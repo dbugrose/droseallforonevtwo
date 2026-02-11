@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/external.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>droseallforone</title>
+</head>
+
+<body class="bg-[url(/assets/lorenzo-herrera-yP89apz2TAA-unsplash.jpg)] bg-cover orbitron">
+    <section class="flex justify-center  text-emerald-400 min-h-screen items-center ">
+        <div style="height: fit" class="bg-[#000000aa] flex flex-col justify-center rounded-2xl p-10 mx-10">
+            <h1 class="text-4xl text-center my-5">
+                MadLib
+            </h1>
+            <section class="grid grid-cols-1 text-center">
+                <h3>Please enter...</h3>
+                <input type="text" placeholder="an adjective" required class="bg-[#000000aa] rounded-2xl"
+                    id="adjInput">
+                <input type="text" placeholder="a mythical creature" required class="bg-[#000000aa] rounded-2xl"
+                    id="creatureInput">
+                <input type="text" placeholder="an object" required class="bg-[#000000aa] rounded-2xl"
+                    id="objectInput">
+                <input type="text" placeholder="a place" required class="bg-[#000000aa] rounded-2xl"
+                    id="placeInput">
+                <input type="text" placeholder="a food" required class="bg-[#000000aa] rounded-2xl"
+                    id="foodInput">
+                <button id="enterBtn"
+                    class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center">Create a Story</button>
+                <div id="madLibParent" class="my-5"></div>
+                <a href="/index.html"
+                    class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center"><img
+                        src="/assets/computer.png" alt="computer icon" width="20px" height="20px"
+                        class="inline">Back</a>
+            </section>
+        </div>
+    </section>
+
+    <script type="module" src="/scripts/mc5.js"></script>
+</body>
+
+</html>
