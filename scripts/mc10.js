@@ -4,9 +4,7 @@ const MexicanBtn = document.getElementById("mexicanBtn");
 const RestaurantParent = document.getElementById("restaurantParent");
 
 let data;
-window.addEventListener('load', function() {
-    typeWriter();
-});
+let category;
 
 async function fetchMC10() {
     const response = await fetch(`https://allforone2526dor-fegsczb3g6hxf2dw.westus3-01.azurewebsites.net/api/mcten/TypeMexicanAsianOrFast/${category}`)
