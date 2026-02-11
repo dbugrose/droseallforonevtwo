@@ -3,7 +3,21 @@ const EnterBtn = document.getElementById("enterBtn");
 const AnswerParent = document.getElementById("answerParent");
 
 let data;
+let i = 0;
+let txt = `Magic 8 Ball`;
+let speed = 100; 
 
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typewriter-text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener('load', function() {
+    typeWriter();
+});
 async function fetchMC9() {
     const response = await fetch(`https://allforone2526dor-fegsczb3g6hxf2dw.westus3-01.azurewebsites.net/api/mceight/RandomAnswer`)
     data = await response.text();
