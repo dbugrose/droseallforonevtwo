@@ -21,7 +21,7 @@
       </h1>
       <section class="grid grid-cols-1 text-center">
         <h3>Please enter a phrase to reverse.</h3>
-        <input type="text" placeholder="your phrase here" class="bg-[#000000aa] rounded-2xl" id="userInput">
+        <input type="text" placeholder="your phrase here" class="bg-[#000000aa] rounded-2xl px-5" id="userInput">
         <button id="enterBtn" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center">Reverse It!</button>
         <div id="reversedParent" class="my-5"></div>
         <a href="/index.html" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center"><img src="/assets/computer.png" alt="computer icon" width="20px" height="20px" class="inline">Back</a>

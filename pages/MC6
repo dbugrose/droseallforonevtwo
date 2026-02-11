@@ -21,7 +21,7 @@
     </h1>
       <section class="grid grid-cols-1 text-center">
         <h3>Please enter a number.</h3>
-        <input type="number" placeholder="number here" required class="bg-[#000000aa] rounded-2xl" id="userInput">
+        <input type="number" placeholder="number here" required class="bg-[#000000aa] px-5 rounded-2xl" id="userInput">
         <button id="enterBtn" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center">Is it Odd or Even?</button>
         <div id="oddOrEvenParent" class="my-5"></div>
         <a href="/index.html" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center"><img src="/assets/computer.png" alt="computer icon" width="20px" height="20px" class="inline">Back</a>

@@ -21,7 +21,7 @@
       </h1>
       <section class="grid grid-cols-1 text-center">
         <h3>Please enter two numbers.</h3>
-        <input type="number" placeholder="first number" required class="bg-[#000000aa] rounded-2xl" id="userInput1"><input type="number" placeholder="second number" required class="bg-[#000000aa] rounded-2xl" id="userInput2">
+        <input type="number" placeholder="first number" required class="bg-[#000000aa] px-5 rounded-2xl" id="userInput1"><input type="number" placeholder="second number" required class="bg-[#000000aa] px-5 rounded-2xl" id="userInput2">
         <button id="enterBtn" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center">Compare The Numbers</button>
         <div id="comparisonParent" class="my-5"></div>
         <a href="/index.html" class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center"><img src="/assets/computer.png" alt="computer icon" width="20px" height="20px" class="inline">Back</a>

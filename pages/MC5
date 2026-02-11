@@ -21,15 +21,15 @@
             </h1>
             <section class="grid grid-cols-1 text-center">
                 <h3>Please enter...</h3>
-                <input type="text" placeholder="an adjective" required class="bg-[#000000aa] rounded-2xl"
+                <input type="text" placeholder="an adjective" required class="bg-[#000000aa] px-5 rounded-2xl"
                     id="adjInput">
-                <input type="text" placeholder="a mythical creature" required class="bg-[#000000aa] rounded-2xl"
+                <input type="text" placeholder="a mythical creature" required class="bg-[#000000aa] px-5 rounded-2xl"
                     id="creatureInput">
-                <input type="text" placeholder="an object" required class="bg-[#000000aa] rounded-2xl"
+                <input type="text" placeholder="an object" required class="bg-[#000000aa] px-5 rounded-2xl"
                     id="objectInput">
-                <input type="text" placeholder="a place" required class="bg-[#000000aa] rounded-2xl"
+                <input type="text" placeholder="a place" required class="bg-[#000000aa] px-5 rounded-2xl"
                     id="placeInput">
-                <input type="text" placeholder="a food" required class="bg-[#000000aa] rounded-2xl"
+                <input type="text" placeholder="a food" required class="bg-[#000000aa] px-5 rounded-2xl"
                     id="foodInput">
                 <button id="enterBtn"
                     class="bg-[#002260aa] rounded-3xl border-emerald-400 border-2 flex justify-center items-center px-2 text-center">Create a Story</button>
