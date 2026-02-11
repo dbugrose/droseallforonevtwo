@@ -5,18 +5,13 @@
   font-weight: 400;
   font-style: normal;
 }
-#typewriter-text {
+#typewriter-text, .cursor {
   border-right: .15em solid oklch(76.5% 0.177 163.223); 
   white-space: nowrap; 
   overflow: hidden; 
   margin: 0 auto; 
   letter-spacing: .15em;
   animation: 
-    blink-caret .75s step-end infinite;
-}
-
-.cursor {
-    animation: 
     blink-caret .75s step-end infinite;
 }
 
