@@ -4,10 +4,6 @@ const ReversedParent = document.getElementById("reversedParent");
 
 let data;
 
-window.addEventListener('load', function() {
-    typeWriter();
-});
-
 async function fetchMC8() {
     const response = await fetch(`https://allforone2526dor-fegsczb3g6hxf2dw.westus3-01.azurewebsites.net/api/mcseven/ReverseItNumeric/${UserInput.value}`)
     data = await response.text();

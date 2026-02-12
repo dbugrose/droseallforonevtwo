@@ -3,9 +3,7 @@ const EnterBtn = document.getElementById("enterBtn");
 const AnswerParent = document.getElementById("answerParent");
 
 let data;
-window.addEventListener('load', function() {
-    typeWriter();
-});
+
 async function fetchMC9() {
     const response = await fetch(`https://allforone2526dor-fegsczb3g6hxf2dw.westus3-01.azurewebsites.net/api/mceight/RandomAnswer`)
     data = await response.text();

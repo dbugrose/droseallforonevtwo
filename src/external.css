@@ -1,7 +1,12 @@
 
-.orbitron {
+* {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Press Start 2P", system-ui !important;
   font-weight: 400;
   font-style: normal;
 }
